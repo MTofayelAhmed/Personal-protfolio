@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import Main from './Pages/Main/Main';
-import SocialLink from './Pages/SocialLink/SocialLink';
+
 
 const router = createBrowserRouter([
   {
@@ -19,10 +19,7 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home></Home>
       },
-      {
-        path: '/',
-        element: <SocialLink></SocialLink>
-      }
+   
     ]
 
 
