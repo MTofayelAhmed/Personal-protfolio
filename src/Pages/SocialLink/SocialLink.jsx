@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const SocialLink = () => {
   return (
-    <div className=" flex flex-col top-[35%]  left-0 fixed">
+    <div className=" hidden lg:flex flex-col top-[35%]  left-0 fixed  ">
       <ul>
         <li className=" ml-[-110px] hover:ml-[-20px] hover:rounded-md duration-300  flex justify-between items-center  w-40 h-14 px-4 bg-gray-500">
           <Link to='https://www.youtube.com/watch?v=LpZrAjU6Hhk&t=2412s' className=" flex justify-between items-center w-full  text-white" href="">
