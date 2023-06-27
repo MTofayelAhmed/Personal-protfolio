@@ -5,8 +5,8 @@ import react from '../../assets/portfolio/react.png'
 import tailwind from '../../assets/portfolio/tailwind.png'
 import gitHub from '../../assets/portfolio/github.png'
 
-import mongodb from '../../assets/portfolio/mongodb.png'
-import express from '../../assets/portfolio/nodejs-express.png'
+import mongodb from '../../assets/portfolio/mongo.jpg'
+import express from '../../assets/portfolio/node.png'
 
 
 const Experience = () => {
@@ -51,7 +51,7 @@ const Experience = () => {
       id: 7,
       src: mongodb,
       title: "Mongodb",
-      style: "shadow-green-400"
+      style: "shadow-green-800"
     },
     {
       id: 8,
@@ -65,16 +65,16 @@ const Experience = () => {
   return (
     <div name='technologies' className='bg-gradient-to-b from-gray-800 to-black w-full  '>
       <div className=' p-4 flex flex-col justify-center w-full h-full  text-white'>
-        <div>
+        <div className='px-20'>
           <p className='text-4xl border-b-4 font-bold border-gray-500 inline p-2'>Technologies </p>
           <p className='py-6'>These are the technologies I have work with</p>
         </div>
-        <div className='grid grid-cols-2 w-full sm:grid-cols-4 gap-8  py-8 px-12 sm:px-0 '>
+        <div className='grid grid-cols-2 w-full sm:grid-cols-4 gap-8  py-8 px-12 sm:px-20 '>
           {
             techs.map(({ id, src, title, style }) => (
               <div
                 key={id} className={`shadow-md  hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
-                <img src={src} alt="" className='w-20 ml-24' />
+                <img src={src} alt="" className='w-20  mx-auto' />
                 <p className=' mt-4 text-center '>{title}</p>
               </div>
             ))

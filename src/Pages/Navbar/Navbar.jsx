@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import { Link } from "react-scroll"
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false)
 
   const navItems = [
     {
@@ -13,15 +14,19 @@ const Navbar = () => {
 
     {
       id: 2,
-      link: "About",
+      link: "about",
     },
     {
       id: 3,
       link: "portfolio",
     },
-
     {
       id: 4,
+      link: "technologies",
+    },
+
+    {
+      id: 5,
       link: "contact",
     },
   ];
@@ -32,14 +37,13 @@ const Navbar = () => {
         <h1>Tofayel</h1>
       </div>
       <ul className=" hidden md:flex">
-        {navItems.map((item) => (
-          <Link
-            key={item.id}
-            className="px-4  uppercase font-medium
-     text-gray-400 hover:scale-105 duration-200 "
-          >
-            {item.link}
-          </Link>
+        {navItems.map(({ id, link }) => (
+          <li   key={id}  className="px-4  uppercase font-medium
+          text-gray-400 hover:scale-105 duration-200 ">
+            <Link to={link} smooth duration={500} >
+              {link}
+            </Link>
+          </li>
         ))}
       </ul>
       <div
@@ -48,18 +52,19 @@ const Navbar = () => {
       >
         {nav ? <FaTimes size={30}> </FaTimes> : <FaBars size={30}></FaBars>}
       </div>
-     {
-      nav && ( <ul className=" flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black  to-gray-800">
-      {navItems.map((item) => (
-        <Link
-          key={item.id}
-          className="px-4 py-6 cursor-pointer uppercase text-4xl text-gray-500 "
-        >
-          {item.link}
-        </Link>
-      ))}
-    </ul>)
-     }
+      {
+        nav && (<ul className=" flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black  to-gray-800">
+          {navItems.map(({ id, link }) => (
+          <li   key={id} className="px-4 py-6 cursor-pointer uppercase text-4xl text-gray-500 ">
+              <Link 
+              onClick={()=> setNav(!nav)}
+              to={link} smooth duration={500} >
+              {link}
+            </Link>
+          </li>
+          ))}
+        </ul>)
+      }
     </div>
   );
 };

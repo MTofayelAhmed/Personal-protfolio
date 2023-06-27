@@ -7,7 +7,7 @@ const Introduction = () => {
     <div name='home' className='text-white min-h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-6 md:flex-row '>
         <div className='flex flex-col justify-center flex-grow mt-28'>
-          <h2 className='text-4xl sm:text-7xl font-bold text-white'>I am a Full Stack Developer</h2>
+          <h2 className='text-4xl sm:text-7xl font-bold text-white'>I am a Full Stack Web Developer</h2>
           <p className='text-gray-500 max-w-md py-4'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam error,
             repellendus, provident cupiditate voluptate magni cum molestiae possimus
