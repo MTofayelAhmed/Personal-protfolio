@@ -23,7 +23,7 @@ const Introduction = () => {
             </button>
           </div>
           <div>
-            <a href="/public/resume.pdf" download>
+            <a href="/resume.pdf" download>
               <button className='group flex px-6 w-fit py-3 my-2 items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md cursor-pointer'>
                 Resume
 
