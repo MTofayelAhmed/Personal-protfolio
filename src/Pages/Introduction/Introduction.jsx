@@ -39,11 +39,10 @@ const Introduction = () => {
             I am a Full Stack Web Developer
           </motion.h2>
           <p className='text-gray-500 max-w-md py-4'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam error,
-            repellendus, provident cupiditate voluptate magni cum molestiae possimus
-            quas reiciendis magnam incidunt laborum omnis odit dolore enim quos.
-            Quod fuga neque nobis ducimus ad quis voluptatibus animi provident?
-            Quos, unde?
+            Driven by a deep passion for creating interactive websites that foster high growth
+            and value for businesses, I am committed to continuous learning and rapid
+            adaptation. With a profound understanding of all stages of web development, I am committed to deliver
+            exceptional results.
           </p>
           <div className='flex gap-5'>
             <div>
