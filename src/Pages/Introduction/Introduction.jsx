@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profileImage from '../../assets/portfolio/heroImage.png';
+import profileImage from '../../assets/portfolio/profile.jpg';
 import { MdArrowRightAlt, MdDownload } from 'react-icons/md';
 import { Link } from 'react-scroll';
 
