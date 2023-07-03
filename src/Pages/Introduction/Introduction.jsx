@@ -52,7 +52,7 @@ const Introduction = () => {
               </Link>
             </div>
             <div>
-              <a href="/resume.pdf" download>
+              <a href="/Resume.pdf" download>
                 <button className='group flex px-6 w-fit py-3 my-2 items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md cursor-pointer'>
                   Resume
                   <span className='group-hover:opacity-0 duration-300'>
